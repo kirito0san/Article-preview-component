@@ -1,7 +1,5 @@
 let Share = document.querySelector(`.Share`)
 let Share_span = document.querySelector(`.Share_span`)
-let one1 = document.querySelector(`.one1`)
-
 Share.addEventListener(`click`, () => {
     if (Share_span.style.display == `` || Share_span.style.display == `none`) {
         Share_span.style.display = `flex`
