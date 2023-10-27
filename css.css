@@ -100,11 +100,11 @@ div.person {
   position: relative;
 }
 .Share:hover img {
-  filter: brightness(0) invert(1) !important;
-  -webkit-filter: brightness(0) invert(1) !important;
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
 }
 .Share:hover {
-  background-color: hsl(217, 19%, 35%) !important;
+  background-color: hsl(217, 19%, 35%);
 }
 /* Share */
 /* Share_span */
@@ -117,8 +117,6 @@ div.person {
   color: hsl(210, 46%, 95%);
   text-transform: uppercase;
   letter-spacing: 5px;
-  /* padding: 15px 30px; */
-
   align-items: center;
   justify-content: center;
   width: 200px;
@@ -166,47 +164,38 @@ div.person {
     border-top-right-radius: 10px;
   }
   section.two {
+    padding: 18px;
     width: 300px;
     box-sizing: border-box;
   }
   .Share_span {
-    /* border-radius: 0; */
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    right: -30px;
-    top: -16px;
-    width: calc(100% + 60px);
-    height: 81px;
-    justify-content: space-around;
+    right: -18px;
+    top: -7px;
+    width: calc(100% + 36px);
+    height: 61px;
+    justify-content: start;
+  }
+  .Share_span p {
+    margin-left: 20px;
   }
   .Share_span::after {
     content: "";
     border: 0;
   }
-  .one1 {
-    display: flex;
+  .Share {
+    top: 5px;
+    position: relative;
+    z-index: 10;
+    background-color: #ecf2f8;
   }
 }
 .fa {
   display: flex;
   gap: 15px;
-}
-.one1 {
-  padding: 10px;
-  height: 15px;
-  width: 15px;
-  font-size: 10px;
-  background-color: #ecf2f8;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
   position: relative;
+  bottom: 1px;
 }
